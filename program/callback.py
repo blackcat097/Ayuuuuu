@@ -16,7 +16,7 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗕𝗿𝗼𝗸𝗲𝗻 𝟮.𝟬...!**
+        f"""𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗙𝗮𝗹𝗹𝗲𝗻 𝗠𝘂𝘀𝗶𝗰...!**
 ┏━━━━━━━━━━━━━━━━━┓
 ┣» ᴏᴘ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ. 
 ┣» ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴜꜱɪᴄ.
@@ -24,7 +24,7 @@ async def cbstart(_, query: CallbackQuery):
 ┣» ᴀᴅᴠᴀɴᴄᴇᴅ ꜰᴇᴀᴛᴜʀᴇꜱ.
 ┣» ꜱᴜᴘᴇʀꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ.
 ┗━━━━━━━━━━━━━━━━━┛
-ᴅᴇꜱɪɢɴᴇᴅ ʙʏ :** [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻](https://t.me/CreatorPavan)**
+ᴅᴇꜱɪɢɴᴇᴅ ʙʏ :** [𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻 𝗡𝗲𝘁𝘄𝗼𝗿𝗸](https://t.me/TheCreatorPavan)**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -39,7 +39,7 @@ async def cbstart(_, query: CallbackQuery):
                     ),
                 ],[
                     InlineKeyboardButton(
-                        "🙂 ᴀᴅᴅ ʙʀᴏᴋᴇɴ ʙᴀʙʏ 🙂",
+                        "🙂 ᴀᴅᴅ ꜰᴀʟʟᴇɴ ʙᴀʙʏ 🙂",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
@@ -88,7 +88,7 @@ async def cbcmds(_, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton("ʙᴀꜱɪᴄ ᴄᴍᴅ", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbstart")
+                    InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbstart")
                 ],
             ]
         ),
@@ -98,7 +98,7 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ʙʀᴏᴋᴇɴ ʙᴀꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ :
+        f"""ꜰᴀʟʟᴇɴ ʙᴀꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ :
 
 » /play [ꜱᴏɴɢ ɴᴀᴍᴇ/ʟɪɴᴋ] - ᴘʟᴀʏ ᴍᴜꜱɪᴄ ᴏɴ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ 
 » /stream [Qᴜᴇʀʏ/ʟɪɴᴋ] - ꜱᴛʀᴇᴀᴍ ᴛʜᴇ ʏᴛ ʟɪᴠᴇ/ʀᴀᴅɪᴏ ʟɪᴠᴇ ᴍᴜꜱɪᴄ 
@@ -115,7 +115,7 @@ async def cbbasic(_, query: CallbackQuery):
 
 **ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -138,14 +138,14 @@ async def cbadmin(_, query: CallbackQuery):
 
 **ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ʙʀᴏᴋᴇɴ ꜱᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅꜱ :
+        f"""ꜰᴀʟʟᴇɴ ꜱᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅꜱ :
 
 » /rmw - ᴄʟᴇᴀɴ ᴀʟʟ ʀᴀᴡ ꜰɪʟᴇꜱ 
 » /rmd - ᴄʟᴇᴀɴ ᴀʟʟ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ꜰɪʟᴇꜱ 
@@ -156,7 +156,7 @@ async def cbsudo(_, query: CallbackQuery):
 
 **ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ.**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ʙʀᴏᴋᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -181,7 +181,7 @@ async def cbmenu(_, query: CallbackQuery):
                       InlineKeyboardButton("🔇", callback_data="cbmute"),
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
                   ],[
-                      InlineKeyboardButton("🗑 ʙʀᴏᴋᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls")],
+                      InlineKeyboardButton("🗑 ꜰᴀʟʟᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls")],
                   ]
              ),
          )
