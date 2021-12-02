@@ -99,7 +99,7 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("**» ʙʀᴏᴋᴇɴ ꜱᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ**")
+            await m.reply("**» ꜰᴀʟʟᴇɴ ꜱᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ**")
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
