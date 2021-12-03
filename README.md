@@ -13,6 +13,9 @@
     <a href="https://github.com/levina-lab/video-stream/network/members"> <img src="https://img.shields.io/github/stars/levina-lab/video-stream?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
 </p>
 
+https://railway.app/new/template?template=https://github.com/UNREALBOT12/Ayuuuuu&envs=ALIVE_NAME,API_HASH,API_ID,ASSISTANT_NAME,BOT_NAME,BOT_TOKEN,BOT_USERNAME,GROUP_SUPPORT,OWNER_NAME,SESSION_NAME,SUDO_USERS,UPDATES_CHANNEL
+
+
 ## 📊 Stats
 [![CodeFactor](https://www.codefactor.io/repository/github/levina-lab/video-stream/badge)](https://www.codefactor.io/repository/github/levina-lab/video-stream)
 
@@ -24,6 +27,7 @@
 <p align="center">
   <img src="https://telegra.ph/file/b8c1461bcbbad5664aa48.png">
 </p>
+
 
 ## ✨ Features
 - Music & Video stream support
