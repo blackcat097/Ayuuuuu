@@ -5,14 +5,14 @@ import os
 import random
 import sys
 
-SMEX_USERS = []
+SUDO_USERS = []
 for x in SUDO_USERS:
-    SMEX_USERS.append(x)
+    SUDO_USERS.append(x)
 
 if UstaD:
     @UstaD.on(events.NewMessage(pattern="/restart"))
     async def restart(e):
-        if e.sender_id in SMEX_USERS:
+        if e.sender_id in SUDO_USERS:
              text = "⭐𝐑𝐄𝐁𝐎𝐎𝐓𝐄𝐃⭐\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
              await e.reply(text, parse_mode=None, link_preview=None)
              try:
