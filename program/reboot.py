@@ -1,4 +1,4 @@
-from O import SUDO_USERS
+from config import SUDO_USERS
 
 from telethon import events
 import os
