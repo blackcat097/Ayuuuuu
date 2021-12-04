@@ -3,6 +3,7 @@ from config import SUDO_USERS
 from telethon import events
 import os
 import random
+import syc
 ifrom driver.decorators import sudo_users_only
 
 SUDO_USERS = []
