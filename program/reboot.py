@@ -3,14 +3,13 @@ from config import SUDO_USERS
 from telethon import events
 import os
 import random
-import sys
+ifrom driver.decorators import sudo_users_only
 
 SUDO_USERS = []
 for x in SUDO_USERS:
     SUDO_USERS.append(x)
 
-if UstaD:
-    @UstaD.on(events.NewMessage(pattern="/restart"))
+    @Client.on(events.NewMessage(pattern="/restart"))
     async def restart(e):
         if e.sender_id in SUDO_USERS:
              text = "⭐𝐑𝐄𝐁𝐎𝐎𝐓𝐄𝐃⭐\n🔰𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝐀𝐈𝐓 𝐓𝐈𝐋𝐋 𝐈𝐓 𝐑𝐄𝐁𝐎𝐎𝐓𝐒...."
