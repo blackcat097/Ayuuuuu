@@ -1,13 +1,8 @@
 import asyncio
 
 from pyrogram import filters, Client
-from pyrogram.types import Message
 
 from config import config
-from core.bot import Bot
-from core.clients import user
-from database.lang_utils import get_message as gm
-from database.chat_database import ChatDB
 
 
 @Client.on_message(filters.command("gcast") & filters.user(config.OWNER_ID))
