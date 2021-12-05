@@ -3,7 +3,7 @@ import asyncio
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from configs import config
+from config import config
 from core.bot import Bot
 from core.clients import user
 from database.lang_utils import get_message as gm
