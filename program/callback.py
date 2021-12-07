@@ -16,15 +16,23 @@ from config import (
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗙𝗮𝗹𝗹𝗲𝗻 𝗠𝘂𝘀𝗶𝗰...!**
+        f"""𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝗕𝗟𝗔𝗖𝗞 𝗖𝗔𝗧  𝗠𝘂𝘀𝗶𝗰...!**
+𝗧𝗵𝗶𝘀 𝗶𝘀 𝘁𝗵𝗲 𝘽𝙡𝙖𝙘𝙠 𝙘𝙖𝙩...!
+
 ┏━━━━━━━━━━━━━━━━━┓
+
 ┣» ᴏᴘ ᴍᴜꜱɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ. 
+
 ┣» ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴜꜱɪᴄ.
+
 ┣» ᴠɪᴅᴇᴏ ᴘʟᴀʏ ꜱᴜᴘᴘᴏʀᴛᴇᴅ.
+
 ┣» ᴀᴅᴠᴀɴᴄᴇᴅ ꜰᴇᴀᴛᴜʀᴇꜱ.
+
 ┣» ꜱᴜᴘᴇʀꜰᴀꜱᴛ ꜱᴘᴇᴇᴅ.
+
 ┗━━━━━━━━━━━━━━━━━┛
-ᴅᴇꜱɪɢɴᴇᴅ ʙʏ :** [𝗢𝗣 𝗔𝗔𝗬𝗨𝗦𝗛](https://t.me/Op_Aayush)**
+ᴅᴇꜱɪɢɴᴇᴅ ʙʏ :** [𝗯𝗹𝗮𝗰𝗸 𝗰𝗮𝘁 ](https://t.me/The_cat_lover0)**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -32,14 +40,14 @@ async def cbstart(_, query: CallbackQuery):
                     InlineKeyboardButton("ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ", callback_data="cbcmds"),
                 ],[
                     InlineKeyboardButton(
-                        "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/creatorpavansupport"
+                        "ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/catmusicworld"
                     ),
                     InlineKeyboardButton(
-                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/theCreatorPavan"
+                        "ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/catmusicworld"
                     ),
                 ],[
                     InlineKeyboardButton(
-                        "🙂 ᴀᴅᴅ ꜰᴀʟʟᴇɴ ʙᴀʙʏ 🙂",
+                        "🙂 ᴀᴅᴅ  ʙᴀʙʏ 🙂",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
@@ -67,7 +75,7 @@ async def cbguides(_, query: CallbackQuery):
 
 ⚡ __Powered by {BOT_NAME} A.I__""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbstart")]]
+            [[InlineKeyboardButton("🔙  ʙᴀᴄᴋ", callback_data="cbstart")]]
         ),
     )
 
@@ -79,7 +87,7 @@ async def cbcmds(_, query: CallbackQuery):
 
 » ꜰᴏʀ ᴋɴᴏᴡɪɴɢ ᴀ ᴄᴏᴍᴍᴀɴᴅ ʟɪꜱᴛ ᴏꜰ ꜰᴀʟʟᴇɴ ᴊᴜꜱᴛ ᴘʀᴇꜱꜱ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴀɴᴅ ʀᴇᴀᴅ ᴄᴏᴍᴍᴀɴᴅꜱ ᴇxᴘʟᴀɴᴀᴛɪᴏɴ.
 
-**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ɴᴇᴛᴡᴏʀᴋ.**""",
+**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ʙʟᴀᴄᴋ ᴄᴀᴛ .**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -88,7 +96,7 @@ async def cbcmds(_, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton("ʙᴀꜱɪᴄ ᴄᴍᴅ", callback_data="cbbasic")
                 ],[
-                    InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbstart")
+                    InlineKeyboardButton("🔙  ʙᴀᴄᴋ", callback_data="cbstart")
                 ],
             ]
         ),
@@ -98,7 +106,7 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ꜰᴀʟʟᴇɴ ʙᴀꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ :
+        f""" ʙᴀꜱɪᴄ ᴄᴏᴍᴍᴀɴᴅꜱ :
 
 » /play [ꜱᴏɴɢ ɴᴀᴍᴇ/ʟɪɴᴋ] - ᴘʟᴀʏ ᴍᴜꜱɪᴄ ᴏɴ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ 
 » /stream [Qᴜᴇʀʏ/ʟɪɴᴋ] - ꜱᴛʀᴇᴀᴍ ᴛʜᴇ ʏᴛ ʟɪᴠᴇ/ʀᴀᴅɪᴏ ʟɪᴠᴇ ᴍᴜꜱɪᴄ 
@@ -113,9 +121,9 @@ async def cbbasic(_, query: CallbackQuery):
 » /uptime - ꜱʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ ꜱᴛᴀᴛᴜꜱ 
 » /alive - ꜱʜᴏᴡ ᴛʜᴇ ʙᴏᴛ ᴀʟɪᴠᴇ ɪɴꜰᴏ [ɪɴ ɢʀᴏᴜᴘ]
 
-**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ɴᴇᴛᴡᴏʀᴋ.**""",
+**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ʙʟᴀᴄᴋ ᴄᴀᴛ.**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙  ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -123,7 +131,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ꜰᴀʟʟᴇɴ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ :
+        f"""ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ :
 
 » /pause - ᴘᴀᴜꜱᴇ ᴛʜᴇ ꜱᴛʀᴇᴀᴍ 
 » /resume - ʀᴇꜱᴜᴍᴇ ᴛʜᴇ ꜱᴛʀᴇᴀᴍ 
@@ -136,16 +144,16 @@ async def cbadmin(_, query: CallbackQuery):
 » /userbotjoin - ɪɴᴠɪᴛᴇ ᴛʜᴇ ᴜꜱᴇʀʙᴏᴛ ᴛᴏ ᴊᴏɪɴ ɢʀᴏᴜᴘ 
 » /userbotleave - ᴏʀᴅᴇʀ ᴜꜱᴇʀʙᴏᴛ ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ɢʀᴏᴜᴘ
 
-**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ɴᴇᴛᴡᴏʀᴋ.**""",
+**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ʙʟᴀᴄᴋ ᴄᴀᴛ.**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙  ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ꜰᴀʟʟᴇɴ ꜱᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅꜱ :
+        f""" ꜱᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅꜱ :
 
 » /rmw - ᴄʟᴇᴀɴ ᴀʟʟ ʀᴀᴡ ꜰɪʟᴇꜱ 
 » /rmd - ᴄʟᴇᴀɴ ᴀʟʟ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ꜰɪʟᴇꜱ 
@@ -154,9 +162,9 @@ async def cbsudo(_, query: CallbackQuery):
 » /restart - ʀᴇꜱᴛᴀʀᴛ ʏᴏᴜʀ ʙᴏᴛ 
 » /leaveall - ᴏʀᴅᴇʀ ᴜꜱᴇʀʙᴏᴛ ᴛᴏ ʟᴇᴀᴠᴇ ꜰʀᴏᴍ ᴀʟʟ ɢʀᴏᴜᴘ
 
-**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ɴᴇᴛᴡᴏʀᴋ.**""",
+**ᴛʜɪꜱ ᴏᴘ ʙᴏᴛ ɪꜱ ꜱᴘᴇᴄɪᴀʟʟʏ ᴅᴇꜱɪɢɴᴇᴅ ʙʏ ʙʟᴀᴄᴋ ᴄᴀᴛ.**""",
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙  ʙᴀᴄᴋ", callback_data="cbcmds")]]
         ),
     )
 
@@ -171,7 +179,7 @@ async def cbmenu(_, query: CallbackQuery):
     chat_id = query.message.chat.id
     if chat_id in QUEUE:
           await query.edit_message_text(
-              f"⚙️ **ꜰᴀʟʟᴇɴ ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ** {query.message.chat.title}\n\n⏸ : ꜰᴀʟʟᴇɴ ᴘᴀᴜꜱᴇ\n▶️ : ꜰᴀʟʟᴇɴ ʀᴇꜱᴜᴍᴇ\n🔇 : ꜰᴀʟʟᴇɴ ᴍᴜᴛᴇ\n🔊 : ꜰᴀʟʟᴇɴ ᴜɴᴍᴜᴛᴇ\n⏹ : ꜰᴀʟʟᴇɴ ꜱᴛʀᴇᴀᴍ ꜱᴛᴏᴘ\n\n© @CreatorPavanNetwork",
+              f"⚙️ ** ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ** {query.message.chat.title}\n\n⏸ : ꜰᴀʟʟᴇɴ ᴘᴀᴜꜱᴇ\n▶️ : ꜰᴀʟʟᴇɴ ʀᴇꜱᴜᴍᴇ\n🔇 : ꜰᴀʟʟᴇɴ ᴍᴜᴛᴇ\n🔊 : ꜰᴀʟʟᴇɴ ᴜɴᴍᴜᴛᴇ\n⏹ : ꜰᴀʟʟᴇɴ ꜱᴛʀᴇᴀᴍ ꜱᴛᴏᴘ\n\n© @CreatorPavanNetwork",
               reply_markup=InlineKeyboardMarkup(
                   [[
                       InlineKeyboardButton("⏹", callback_data="cbstop"),
@@ -181,7 +189,7 @@ async def cbmenu(_, query: CallbackQuery):
                       InlineKeyboardButton("🔇", callback_data="cbmute"),
                       InlineKeyboardButton("🔊", callback_data="cbunmute"),
                   ],[
-                      InlineKeyboardButton("🗑 ꜰᴀʟʟᴇɴ ᴄʟᴏꜱᴇ", callback_data="cls")],
+                      InlineKeyboardButton("🗑  ᴄʟᴏꜱᴇ", callback_data="cls")],
                   ]
              ),
          )
