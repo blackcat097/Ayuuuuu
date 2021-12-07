@@ -34,12 +34,12 @@ async def join_group(client, message):
     except Exception as e:
         print(e)
         await message.reply_text(
-            f"🛑 𝗙𝗹𝗼𝗼𝗱 𝗪𝗮𝗶𝘁 𝗘𝗿𝗿𝗼𝗿 🛑 \n\n**ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴜꜱᴇʀʙᴏᴛ ᴄᴀɴ'ᴛ ᴊᴏɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ.**"
-            "\n\n**ᴀᴅᴅ ᴀꜱꜱɪꜱᴛᴀɴᴛ ᴍᴀɴᴜᴀʟʟʏ ɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.**\n\n**ᴀꜱꜱɪꜱᴛᴀɴᴛ :  @FallenAssistant**\n\n**ᴍꜱɢ ᴀᴛ :**\n\n**@CreatorPavanSupport**\n\n**ᴏʀ ᴄᴏɴᴛᴀᴄᴛ ᴍᴀꜱᴛᴇʀ 𝙾𝚙 𝙰𝚊𝚢𝚞𝚜𝚑.**",
+            f"🛑 𝗙𝗹𝗼𝗼𝗱 𝗪𝗮𝗶𝘁 𝗘𝗿𝗿𝗼𝗿 🛑 \n\n**ʙʟᴀᴄᴋ ᴄᴀᴛ ᴏᴘ ᴜꜱᴇʀʙᴏᴛ ᴄᴀɴ'ᴛ ᴊᴏɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴅᴜᴇ ᴛᴏ ʜᴇᴀᴠʏ ᴊᴏɪɴ ʀᴇQᴜᴇꜱᴛ.**"
+            "\n\n**ᴀᴅᴅ ᴀꜱꜱɪꜱᴛᴀɴᴛ ᴍᴀɴᴜᴀʟʟʏ ɪɴ ᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ.**\n\n**ᴀꜱꜱɪꜱᴛᴀɴᴛ :  @ammuXassient**\n\n**ᴍꜱɢ ᴀᴛ :**\n\n**@catmusicworld**\n\n**ᴏʀ ᴄᴏɴᴛᴀᴄᴛ ᴍᴀꜱᴛᴇʀ 𝙗𝙡𝙖𝙘𝙠 𝙘𝙖𝙩.**",
         )
         return
     await message.reply_text(
-        f"✅ **ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴜꜱʀᴇʙᴏᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴊᴏɪɴᴇᴅ ᴛʜɪꜱ ᴄʜᴀᴛ.**",
+        f"✅ **ʙʟᴀᴄᴋ ᴄᴀᴛ ᴏᴘ ᴜꜱʀᴇʙᴏᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ᴊᴏɪɴᴇᴅ ᴛʜɪꜱ ᴄʜᴀᴛ.**",
     )
 
 
@@ -48,7 +48,7 @@ async def join_group(client, message):
 @authorized_users_only
 async def leave_one(client, message):
     try:
-        await USER.send_message(message.chat.id, "ᴄʀᴇᴀᴛᴏʀ ᴘᴀᴠᴀɴ ᴏᴘ ᴜꜱʀᴇʙᴏᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʟᴇꜰᴛ ᴛʜɪꜱ ᴄʜᴀᴛ.")
+        await USER.send_message(message.chat.id, "ʙʟᴀᴄᴋ ᴄᴀᴛ ᴏᴘ ᴜꜱʀᴇʙᴏᴛ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ʟᴇꜰᴛ ᴛʜɪꜱ ᴄʜᴀᴛ.")
         await USER.leave_chat(message.chat.id)
     except BaseException:
         await message.reply_text(
