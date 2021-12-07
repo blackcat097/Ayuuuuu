@@ -60,7 +60,7 @@ def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**[𝗙𝗿𝗼𝗺 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 𝗣𝗮𝘃𝗮𝗻 𝗡𝗲𝘁𝘄𝗼𝗿𝗸](https://t.me/CreatorPavanNetwork)**"
+        rep = f"**[𝗙𝗿𝗼𝗺 𝗯𝗹𝗮𝗰𝗸 𝗰𝗮𝘁 ](https://t.me/The_cat_lover0)**"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(float(dur_arr[i])) * secmul
