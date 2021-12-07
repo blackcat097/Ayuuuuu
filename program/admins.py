@@ -15,7 +15,7 @@ from pyrogram.types import (
 
 
 bttn = InlineKeyboardMarkup(
-    [[InlineKeyboardButton("🔙 ꜰᴀʟʟᴇɴ ʙᴀᴄᴋ", callback_data="cbmenu")]]
+    [[InlineKeyboardButton("🔙  ʙᴀᴄᴋ", callback_data="cbmenu")]]
 )
 
 
@@ -67,7 +67,7 @@ async def skip(client, m: Message):
         else:
             await m.reply_photo(
                 photo=f"{IMG_3}",
-                caption=f"**❰ 𝗙𝗮𝗹𝗹𝗲𝗻 ❘ 𝗠𝘂𝘀𝗶𝗰 ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝗖𝗿𝗲𝗮𝘁𝗼𝗿 😀 𝗣𝗮𝘃𝗮𝗻 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n ⏭ **𝗙𝗮𝗹𝗹𝗲𝗻 𝗦𝗸𝗶𝗽𝗽𝗲𝗱..!**",
+                caption=f"**❰ 𝙘𝙖𝙩 ❘ ❱ ❤ 𝗡𝗼𝘄 🤘 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗙𝗿𝗼𝗺 🔊 𝙗𝙡𝙖𝙘𝙠 😀 𝙘𝙖𝙩 😎 𝗦𝗲𝗿𝘃𝗲𝗿...**🤞\n\n ⏭ **𝗦𝗸𝗶𝗽𝗽𝗲𝗱..!**",
                 reply_markup=keyboard,
             )
     else:
@@ -99,7 +99,7 @@ async def stop(client, m: Message):
         try:
             await call_py.leave_group_call(chat_id)
             clear_queue(chat_id)
-            await m.reply("**» ꜰᴀʟʟᴇɴ ꜱᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ**")
+            await m.reply("**»ꜱᴛʀᴇᴀᴍ ᴇɴᴅᴇᴅ**")
         except Exception as e:
             await m.reply(f"🚫 **error:**\n\n`{e}`")
     else:
