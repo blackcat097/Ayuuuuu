@@ -179,7 +179,7 @@ async def cbmenu(_, query: CallbackQuery):
     chat_id = query.message.chat.id
     if chat_id in QUEUE:
           await query.edit_message_text(
-              f"⚙️ ** ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ** {query.message.chat.title}\n\n⏸ : ꜰᴀʟʟᴇɴ ᴘᴀᴜꜱᴇ\n▶️ : ꜰᴀʟʟᴇɴ ʀᴇꜱᴜᴍᴇ\n🔇 : ꜰᴀʟʟᴇɴ ᴍᴜᴛᴇ\n🔊 : ꜰᴀʟʟᴇɴ ᴜɴᴍᴜᴛᴇ\n⏹ : ꜰᴀʟʟᴇɴ ꜱᴛʀᴇᴀᴍ ꜱᴛᴏᴘ\n\n© @CreatorPavanNetwork",
+              f"⚙️ ** ꜱᴇᴛᴛɪɴɢꜱ ꜰᴏʀ** {query.message.chat.title}\n\n⏸ : ᴄᴀᴛ ᴘᴀᴜꜱᴇ\n▶️ : ᴄᴀᴛ ʀᴇꜱᴜᴍᴇ\n🔇 : ᴄᴀᴛ ᴍᴜᴛᴇ\n🔊 : ᴄᴀᴛ ᴜɴᴍᴜᴛᴇ\n⏹ : ᴄᴀᴛ ꜱᴛʀᴇᴀᴍ ꜱᴛᴏᴘ\n\n© @The_cat_lover0",
               reply_markup=InlineKeyboardMarkup(
                   [[
                       InlineKeyboardButton("⏹", callback_data="cbstop"),
